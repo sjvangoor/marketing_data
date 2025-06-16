@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ping15 helps phone-anxious young people reach out without fear." />
+  <title>Ping15 for Young People</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="main-nav reveal">
+    <a href="index.html" class="logo">Ping15</a>
+    <a href="young.html" class="active">Young People</a>
+    <a href="elderly.html">Elderly</a>
+    <a href="longdistance.html">Long-Distance</a>
+  </nav>
+  <div class="background">
+    <span style="left:10%; top:20%;"></span>
+    <span style="left:70%; top:60%; animation-delay:3s;"></span>
+    <span style="left:40%; top:80%; animation-delay:6s;"></span>
+  </div>
+  <header class="hero">
+    <h1 class="headline">Connection without panic.</h1>
+    <p class="subheadline">Ping15 helps phone-anxious young people reach out without fear.</p>
+    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600" alt="Calm young person using phone" class="hero-image"/>
+  </header>
+  <main>
+    <section class="testimonials">
+      <blockquote class="quote">
+        <p>"15 seconds is all I needed to feel less alone."</p>
+      </blockquote>
+    </section>
+    <section class="use-cases" id="use">
+      <h2>Use cases</h2>
+      <ul>
+        <li>Ping your roommate after a fight</li>
+        <li>Say hi to your mom without worrying she'll keep you on the phone</li>
+      </ul>
+    </section>
+    <section class="signup">
+      <h2>Start small. Start safe.</h2>
+      <form id="emailForm">
+        <input type="email" id="email" placeholder="you@example.com" required>
+        <button type="submit">Be one of the first to Ping</button>
+      </form>
+      <div id="thanks" class="hidden">Thank you! 🎉</div>
+    </section>
+  </main>
+  <button class="cta" id="cta">Join the beta</button>
+  <button id="modeToggle" class="mode-toggle">🌙</button>
+  <footer>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -7,7 +7,7 @@ const observer = new IntersectionObserver(entries => {
 });
 
 // observe elements
-['.headline', '.subheadline', '.phone-mockup', '.card', '.use-cases li', '.testimonials blockquote'].forEach(sel => {
+['.main-nav', '.headline', '.subheadline', '.hero-image', '.phone-mockup', '.card', '.use-cases li', '.testimonials blockquote'].forEach(sel => {
   document.querySelectorAll(sel).forEach(el => observer.observe(el));
 });
 
@@ -60,14 +60,27 @@ toggle.addEventListener('click', () => {
   toggle.textContent = dark ? '☀️' : '🌙';
 });
 
-// countdown demo
+// countdown demo (home page)
 const timerEl = document.getElementById('timer');
-let time = 15;
-function tick() {
-  timerEl.textContent = time;
-  if (time === 0) {
-    clearInterval(countdown);
+if (timerEl) {
+  let time = 15;
+  function tick() {
+    timerEl.textContent = time;
+    if (time === 0) {
+      clearInterval(countdown);
+    }
+    time--;
   }
-  time--;
+  const countdown = setInterval(tick, 1000);
 }
-const countdown = setInterval(tick, 1000);
+
+// nav scroll effect
+const nav = document.querySelector('.main-nav');
+window.addEventListener('scroll', () => {
+  if (!nav) return;
+  if (window.scrollY > 10) {
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
+});
