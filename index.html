@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ping15 - Fight phone call anxiety with 15-second calls." />
+  <meta property="og:title" content="Ping15" />
+  <meta property="og:description" content="Fifteen second calls for stress-free connection" />
+  <title>Ping15</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background">
+    <span style="left:10%; top:20%;"></span>
+    <span style="left:70%; top:60%; animation-delay:3s;"></span>
+    <span style="left:40%; top:80%; animation-delay:6s;"></span>
+  </div>
+  <header class="hero">
+    <h1 class="headline">What if a phone call only lasted 15 seconds?</h1>
+    <p class="subheadline">A pressure-free way to connect. Ping15 helps people reach out without anxiety.</p>
+    <div class="phone-mockup" id="demo">
+      <svg viewBox="0 0 200 400" class="phone">
+        <rect x="0" y="0" width="200" height="400" rx="30" ry="30" fill="var(--phone-bg)"/>
+        <circle cx="100" cy="200" r="70" stroke="var(--accent)" stroke-width="6" fill="none"/>
+        <text x="100" y="210" text-anchor="middle" font-size="40" fill="var(--text)" id="timer">15</text>
+      </svg>
+    </div>
+  </header>
+
+  <main>
+    <section class="features" id="features">
+      <div class="card">
+        <h3>Always 15 seconds</h3>
+        <p>No more, no less&mdash;every call ends gently.</p>
+      </div>
+      <div class="card">
+        <h3>No awkward starts</h3>
+        <p>Ping in and know exactly how long you have.</p>
+      </div>
+      <div class="card">
+        <h3>Emotional connection, not small talk</h3>
+        <p>Say what matters and feel close in moments.</p>
+      </div>
+    </section>
+
+    <section class="use-cases" id="use">
+      <h2>Made for...</h2>
+      <ul>
+        <li>📞 Phone-anxious young people</li>
+        <li>👵 Elderly people craving voice</li>
+        <li>🌍 Busy friends and long-distance couples</li>
+      </ul>
+    </section>
+
+    <section class="signup" id="signup">
+      <h2>Join the early access list</h2>
+      <form id="emailForm">
+        <input type="email" id="email" placeholder="you@example.com" required>
+        <button type="submit">Be one of the first to Ping</button>
+      </form>
+      <div id="thanks" class="hidden">Thank you! 🎉</div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+      <blockquote>
+        <p>"I finally called my sister after a year. 15 seconds was enough."</p>
+        <span>- Jamie</span>
+      </blockquote>
+      <blockquote>
+        <p>"This app helped me reconnect with my grandpa."</p>
+        <span>- Riley</span>
+      </blockquote>
+    </section>
+  </main>
+
+  <button class="cta" id="cta">Join the beta</button>
+  <button id="modeToggle" class="mode-toggle">🌙</button>
+
+  <footer>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
